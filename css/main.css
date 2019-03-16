@@ -396,13 +396,6 @@ form.seamless button {
     flex-basis: 40px;
 }
 
-@media (max-width: 575.98px) {
-    .manage-grouping-body.card-body {
-        padding-left: 0;
-        padding-right: 0;
-    }
-}
-
 @media (max-width: 991.98px) {
     .tooltip {
         display: none;
@@ -415,6 +408,10 @@ form.seamless button {
 
 .basis-column {
     width: 3%;
+}
+
+.card {
+    overflow: hidden;
 }
 
 /*.card.page-header {

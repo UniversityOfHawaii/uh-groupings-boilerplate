@@ -89,49 +89,109 @@
         </div>
     </div>
 
-    <div class="card-body">
+    <div class="card">
+        <div class="row">
+            <div class="col-md-1 col-12 teal-tint-bg pt-3 pb-3" id="pills-column">
+                <ul class="nav nav-pills flex-md-column flex-row justify-content-md-start justify-content-center"
+                    id="group-pills">
+                    <li class="nav-item mx-auto" data-toggle="tooltip" data-placement="right"
+                        title="List all members (Basis + Include - Exclude members)">
+                        <a data-toggle="tab" href="#all" class="nav-link rounded-circle active"
+                           aria-label="All Members" ng-click="resetFields()">
+                            <i class="fa fa-user fa-fw" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item mx-auto pt-2" data-toggle="tooltip" data-placement="right"
+                        title="List only Basis members">
+                        <a data-toggle="tab" href="#basis" class="nav-link"
+                           aria-label="Basis Members" ng-click="resetFields()">
+                            <i class="fa fa-id-card-o fa-fw" aria-hidden="true"></i>
 
+                        </a>
+                    </li>
+                    <li class="nav-item mx-auto pt-2" data-toggle="tooltip" data-placement="right"
+                        title="Manage the Include members list">
+                        <a data-toggle="tab" href="#include" class="nav-link"
+                           aria-label="Include Members" ng-click="resetFields()">
+                            <i class="fa fa-plus fa-fw" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item mx-auto pt-2" data-toggle="tooltip" data-placement="right"
+                        title="Manage the Exclude members list">
+                        <a data-toggle="tab" href="#exclude" class="nav-link"
+                           aria-label="Exclude Members" ng-click="resetFields()">
+                            <i class="fa fa-minus fa-fw" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item mx-auto pt-2" data-toggle="tooltip" data-placement="right"
+                        title="Manage this grouping&#39;s owners">
+                        <a data-toggle="tab" href="#owners" class="nav-link"
+                           aria-label="Grouping Owners" ng-click="resetFields()">
+                            <i class="fa fa-star fa-fw" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item mx-auto pt-2" data-toggle="tooltip" data-placement="right"
+                        title="Manage this grouping&#39;s preferences">
+                        <a data-toggle="tab" href="#preferences" class="nav-link"
+                           aria-label="Preferences" ng-click="resetFields()">
+                            <i class="fa fa-cog fa-fw" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="tab-content col-md-11 col-12" id="pill-content">
+                <h2 class="font-weight-bold text-dark pt-4 pb-4">All Members <span class="text-dark">(11)</span></h2>
+                <div id="all" class="tab-pane fade show active">
+                    <div class="table-responsive">
+                        <table class="table table-striped table-hover" aria-live="assertive">
+                            <thead>
+                                <tr>
+                                    <th scope="col">
+                                        Grouping Name
+                                        <i class="fa sort-icon"></i>
+                                    </th>
+                                    <th cope="col">
+                                        UH Number
+                                    </th>
+                                    <th scope="col">
+                                        UH Username
+                                        <i class="fa sort-icon"></i>
+                                    </th>
+                                    <th scope="col">
+                                        Where Listed?
+                                        <i class="fa sort-icon"></i>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Aaron Daniel Jameson</td>
+                                    <td>
+                                       12345678
+                                    </td>
+                                    <td>aabbcc</td>
+                                    <td>
+                                        Basis
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Clinton John</td>
+                                    <td>
+                                        12345678
+                                    </td>
+                                    <td>aabbccdd</td>
+                                    <td>
+                                        Include
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <nav aria-label="Page Navigation" class="mb-5">
-        <ul class="pagination flex-wrap" aria-live="assertive">
-            <li class="page-item">
-                <a class="page-link">
-                    « <span class="d-sm-inline d-none">First</span>
-                </a>
-            </li>
-            <li class="page-item">
-                <a class="page-link">
-                    ‹ <span class="d-sm-inline d-none">Prev</span>
-                </a>
-            </li>
-            <li class="page-item">
-                <a class="page-link">
-                    1
-                </a>
-            </li>
-             <li class="page-item">
-                <a class="page-link">
-                    2
-                </a>
-            </li>
-             <li class="page-item">
-                <a class="page-link">
-                    3
-                </a>
-            </li>
-            <li class="page-item">
-                <a class="page-link">
-                    <span class="d-sm-inline d-none">Next</span> ›
-                </a>
-            </li>
-            <li class="page-item">
-                <a class="page-link">
-                    <span class="d-sm-inline d-none">Last</span> »
-                </a>
-            </li>
-        </ul>
-    </nav>
 </div>
 <!-- / Content container. -->
 
