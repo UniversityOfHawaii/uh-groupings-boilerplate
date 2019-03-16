@@ -339,18 +339,61 @@ table .w-30 {
 }
 @media (min-width: 992px) {
     th.grouping-name {
-        width: 50%;
+        min-width: 10rem;
     }
-    .manage-groupings td span.path {
-        display: inline-block;
-        max-width: 230px;
+    /*.manage-groupings td span.path {
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
-    }
+    }*/
 }
-.manage-groupings td:last-child i {
-    float: right;
+th {
+    font-size: .8rem;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+}
+.manage-groupings td:first-child {
+    align-items: center;
+    display: flex;
+}
+.manage-groupings td:first-child i {
+    flex-basis: 20px;
+    margin-right: 8px;
+}
+.manage-groupings td:first-child span {
+    flex: 1;
+}
+.manage-groupings td:last-child {
+    max-width: 220px;
+}
+th.grouping-members {
+    min-width: 8rem;
+}
+.manage-groupings td span.path {
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: calc(100% - 40px);
+    white-space: nowrap;
+}
+.manage-groupings td:last {
+    align-items: center;
+    display: flex;
+}
+form.seamless {
+    display: flex;
+    min-width: 12rem;
+}
+form.seamless input {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    flex: 1;
+    width: calc(100% - 50px);
+}
+form.seamless button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    flex-basis: 40px;
 }
 
 @media (max-width: 575.98px) {
