@@ -57,30 +57,11 @@
 </nav>
 
 <!--  Content container -->
-<div class="seafoam-bg pt-5">
-    <div class="container">
-        <h1 class="text-center text-md-left">Manage My Memberships</h1>
-        <p class="lead text-center text-md-left">View and manage my memberships. Search for new groupings to join as a member.</p>
-
-        <ul class="nav nav-tabs flex-sm-row flex-column" role="tablist">
-            <li class="nav-item" role="presentation">
-                <a href="#groupings" class="nav-link active" data-toggle="tab" role="tab">
-                    Current Memberships
-                </a>
-            </li>
-            <li class="nav-item" role="presentation" ng-click="displayAdmins()">
-                <a href="#admins" class="nav-link" data-toggle="tab" role="tab">
-                    Membership Opportunities
-                </a>
-            </li>
-        </ul>
-    </div>
-</div>
 <div class="container">
-    <div class="row m-auto pt-4 pb-4">
+    <div class="row pt-5 pb-4">
         <div class="col-lg-9 col-md-8 col-12">
-            <h2 class="card-title mt-md-1 mt-0 mb-1">Manage Groupings</h2>
-            <p>Some memberships are optional and some are required.</p>
+            <h1 class="text-center text-md-left">Manage My Groupings</h2>
+            <p class="lead text-center text-md-left">View and manage groupings I own. Manage members, configure grouping options and sync destinations.</p>
         </div>
         <div class="col-lg-3 col-md-4 col-12">
             <input class="form-control" placeholder="Filter Groupings..." />
@@ -112,7 +93,7 @@
                     <td><i class="fa fa-fw fa-user text-secondary text-muted" aria-hidden="true"></i> 59</td>
                     <td>
                         <form class="seamless border border-secondary rounded">
-                            <input type="text" class="form-control border-0" value="hawaii.edu:custom:test:aaronvil:aaronvil-test"><button class="btn btn-sm"><i class="fa fa-fw fa-clipboard" aria-hidden="true"></i></button>
+                            <input type="text" class="copy-path form-control border-0" value="hawaii.edu:custom:test:aaronvil:aaronvil-test"><button onclick="copyPath()" class="btn btn-sm"><i class="fa fa-fw fa-clipboard" aria-hidden="true"></i></button>
                         </form>
                     </td>
                     <td><em>Membership Required</em></td>
