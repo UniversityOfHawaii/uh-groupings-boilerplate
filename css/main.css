@@ -426,3 +426,6 @@ form.seamless button {
     margin-top: 1rem;
 }
 
+.dashboard-item-icon .fa-wrench {
+    transform: rotate(-90deg);
+}
