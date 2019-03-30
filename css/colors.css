@@ -147,15 +147,6 @@ body h1 {
     color: #d21515;
 }
 
-.bg-dashboard {
-    /*background-color:*/
-}
-
-/*.card.page-header */
-.card-header {
-    background-color: #e5eef1;
-}
-
 .page-item.active > .page-link {
     /*background-color:*/
     /*border-color:*/
@@ -232,11 +223,6 @@ h1, h2, .text-left, span {
 
 .table {
     background: white;
-}
-
-.card-header {
-    border: 1px solid #dee2e6;
-    background: #e5eef1;
 }
 
 h3{
