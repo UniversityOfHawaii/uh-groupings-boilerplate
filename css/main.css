@@ -352,9 +352,14 @@ th {
     letter-spacing: .5px;
     text-transform: uppercase;
 }
-.manage-groupings td:first-child {
+.manage-admins td:first-child {
     align-items: center;
     display: flex;
+    justify-content: space-between;
+}
+.manage-groupings td:first-child {
+    /*align-items: center;
+    display: flex;*/
 }
 .manage-groupings td:first-child i {
     flex-basis: 20px;
@@ -428,4 +433,8 @@ form.seamless button {
 
 .dashboard-item-icon .fa-wrench {
     transform: rotate(-90deg);
+}
+
+.text-tracking {
+    letter-spacing: 1px;
 }

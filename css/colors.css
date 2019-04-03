@@ -113,6 +113,52 @@ h2, h3, h4, h5, h6 {
     background: white;
     color: var(--dark-teal);
 }
+
+.nav-pills .nav-link.active {
+    position: relative;
+    background-color: #fff;
+}
+
+.nav-pills .nav-link.active:after {
+    content: "";
+    border-color: var(--teal);
+    border-style: solid;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    position: absolute;
+}
+
+@media screen and (max-width: 767.9px) {
+    .nav-pills .nav-link.active:after {
+        border-width: 0 10px 10px 10px;
+        border-color: transparent transparent #fff transparent;
+        bottom: -16px;
+        left: 33%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .nav-pills .nav-link.active:after {
+        border-width: 10px 10px 10px 0;
+        border-color: transparent #fff transparent transparent;
+        top: 25%;
+        right: -35px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .nav-pills .nav-link.active:after {
+        right: -18px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .nav-pills .nav-link.active:after {
+        right: -24px;
+    }
+}
+
 .nav-pills .nav-link {
     color: var(--dark-teal);
     height: 44px;
